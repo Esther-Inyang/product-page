@@ -1,0 +1,772 @@
+body {
+    background-color: rgb(247, 245, 250); /*#DFDCE3*/
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header section*/
+.contact-info, .contact-info a, .call{
+    text-align: right;
+    color: #078898;
+    margin-top: 10px 50px 0px 0px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.contact-info a:hover{
+    text-decoration: underline;
+}
+
+.flag {
+    height: 12px;
+    width: 12px;
+    margin-left: 20px;
+}
+
+.call{
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.divider{
+    margin: 0px 10px;
+}
+
+.address-div{
+    text-align: right;
+}
+
+.our-address {
+    opacity: 0.4;
+    color: white;
+    font-weight: 600;
+    text-align: right;
+    font-size: 15px;
+    width: 60%;
+    background-color: #078898;
+    border-top-right-radius: 30px;
+    display: inline-block;
+    padding: 5px 100px 5px 90px;
+
+}
+
+.address{
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+
+.our-address img{
+    width: 15px;
+    height: 25px;
+    padding-top: 5px;
+    margin-right: 5px;
+}
+
+/*Nav section*/
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: #078898;
+}
+
+.nav-wrapper img{
+    width: 70px; 
+    height: 50px; 
+    margin: 0px 0px 0px 40px;
+}
+
+nav{
+    padding: 15px 50px 5px 0px; 
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    
+}
+
+nav ul li a:hover{
+   border-bottom: 2px solid white;
+}
+
+/*SUB MENU - Dropdown*/
+.sub-menu {
+    position: absolute;
+    display: none;
+    width: 47%;
+    padding: 0px;
+    margin: 0px; 
+    background-color: white;
+}
+
+.sub-menu ul{
+    padding: 5px;
+    margin: 0px;
+    display: flex;
+}
+
+.sub-menu ul li a{
+    font-size: 16px;
+    color: #444444;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.sub-menu ul li a:hover{
+    color: #078898;
+    border-bottom: none;
+    border-left: 2px solid #078898;
+}
+
+nav li:hover .sub-menu{ 
+    display: block;
+}
+
+/*Toggle nav*/
+label {
+    font-size: 26px;
+    margin: 0 40px 0 0;
+    display:none;
+    color: #ffffff;
+}
+
+#toggle {
+    display: none;
+}
+
+/*CONTACT Page*/
+.contact_page{
+    background: url("images/background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.contact-title{
+    color: #078898;
+    font-size: 40px;
+    margin: 100px 50px 50px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.message-title{
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 200px;
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+form {
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    background-color:#DFDCE3;
+    box-shadow: 4px 5px 8px #DFDCE3;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid #078898;
+}
+textarea{
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    resize: none;
+    font-size: 18px;
+    border: 1px solid #078898;
+}
+
+.submit-div{
+    text-align: center;
+}
+input[type=submit] {
+    display: inline-block;
+    margin: 20px 0 20px 0px;
+    border-radius: 5px;
+    padding: 15px 35px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #078898;
+    border: 1px solid #030317;
+    box-shadow: 3px 4px 5px #DFDCE3;
+    background-color: white;
+}
+
+input[type=submit]:hover{
+    background-color: #DFDCE3;
+}
+
+.contact-info2{
+    text-align: right;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.address2, .phone, .email{
+    margin-top: 20px;
+}
+
+.address2 img,
+.phone img,
+.email img{
+    width: 12px;
+    height: 15px;
+}
+
+.social-div {
+    margin-top: 100px;
+    margin-left:120px;
+}
+
+.social-div img{
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.social-div img:hover{
+    border: 1px solid #078898;
+}
+
+.social-div ul{
+    list-style-type: none;
+}
+
+.social-div ul li{
+    display: inline-block;
+}
+
+.follow2 {
+    font-size: 15px;
+    color: #078898;
+    font-style: italic;
+    margin-left: 45px;
+}
+
+
+/*chat-section*/
+.chat-section{
+    text-align: right;
+}
+
+.chat-box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #078898;
+    display: inline-block;
+    text-align: left;
+    margin: 10px 20px 0px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.chat-box img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 20px;
+}
+
+.help{
+    margin: 10px;
+    margin: 20px 0px 0px 50px;
+    color: red;
+}
+
+.chat-box a{
+    color: #078898;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.chat-box a:hover{
+    color: #030317;
+}
+
+/*footer*/
+footer{
+    background-color:#030317;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.footer-arrowup{
+    width: 100%;
+    height: auto;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.arrowup{
+    background-color: #078898;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.arrowup:hover{
+    border: 2.5px solid white;
+}
+
+.arrowup a{
+    text-decoration: none;  
+}
+
+.arrowup img{
+    width: 25px;
+    height: 25px;
+    margin:5px 0px 0px 5px;
+}
+
+.footer_contents{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer_contents p{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.products-box{
+    margin-right: 100px; 
+}
+
+.product {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.product-bottom, .industry-bottom{
+    width: 50px;
+    margin-top: 10px;
+    border-bottom: 3px solid #078898;
+}
+
+.industries {
+    font-weight: 600;
+    font-size: 20px;
+    text-underline-position: right;
+}
+
+.footer-divider1, .footer-divider2{
+    border-right: 2px solid #078898;
+    height: 100px;
+    margin: 50px 40px; 
+}
+
+.prod-indus{
+    display: flex;
+    justify-content: space-between;
+}
+
+.indus-div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px; 
+}
+
+.industries2-box{
+    margin-top: 60px; 
+}
+
+.startups, .education{
+    margin-top: 20px;
+}
+
+.contact-box img{
+    width: 12px;
+    height: 15px;
+}
+
+.contact-div{
+    width: 100%;
+    text-align: right;
+}
+
+.contact-btn{
+    padding: 8px 20px;
+    border: 1px solid #078898;
+    margin-bottom: 10px;
+    font-weight: 600;
+    background-color: #DFDCE3;
+    display: inline-block;
+}
+
+.contact-location, .contact-inf, .contact-number {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.footer_contents2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:0px 60px 0px 60px;
+}
+
+.career-btn{
+    border-radius: 10px;
+    padding: 8px 40px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border: 2px solid #777676;
+}
+
+.career-btn:hover{
+    border: 1px solid #777676;
+    cursor: pointer;
+}
+
+.career-btn a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #333;
+}
+
+.career-btn a:hover{
+    color: #000000;
+}
+
+.footerlogo img{
+    width: 50px;
+    height: 60px;
+    margin-top: 20px
+}
+
+.follow {
+    font-size: 15px;
+    color: #078898;
+    font-style: italic;
+}
+
+/*social*/
+.social img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.social img:hover{
+    border: 1px solid #078898;
+}
+
+.social ul{
+    list-style-type: none;
+}
+
+.social ul li{
+    display: inline-block;
+}
+ 
+.copyrite{
+    width: 100%;
+    color: #078898;
+    font-size: 15px;
+    text-align: center;
+    padding: 12px;
+    background-color: #DFDCE3;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /*Header section*/
+    .contact-info, .contact-info a, .call{
+        text-align: center;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .address-div{
+        text-align: center;
+    }
+
+    .our-address {
+        width: 100%;
+        text-align: center;
+        padding: 0px 0px 5px 0px;
+        border-top-left-radius: 30px;
+    }
+
+    /*nav section*/
+    .nav-wrapper img{
+        width: 70px;
+        height: 40px;
+        margin: 0px 0px 0px 40px;
+    }
+
+    nav{
+        padding: 2px 0px 5px 0px;
+    }
+
+    nav ul{
+        width:100%;
+        text-align: center;
+        display: none;
+        background-color: #078898;
+    }
+
+    nav ul li {
+        width: 100%; 
+    }
+
+    nav ul li:hover{
+        background-color:white;
+    }
+
+    nav ul li a{
+        display: block;
+        font-weight: 600;
+        padding: 8px;
+    }
+
+    nav ul li a:hover{
+        color:#078898;
+        border-bottom: none;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #menu{
+        display: block;
+        position: absolute;
+        right: 0%
+    }
+
+    /*SUB MENU - Dropdown*/
+    .sub-menu{
+        border-top: 1px solid #078898; 
+        border-right: 1px solid white; 
+        width: 40%; 
+    }
+
+    .sub-menu ul{
+        padding: 0px;
+        display: block; 
+        background-color: white; 
+    }
+
+    .sub-menu ul li{
+        display: inline-block; 
+    }
+
+    .sub-menu ul li:hover{
+        color: white;
+        background-color: #078898; 
+    }
+
+    .sub-menu ul li a{
+        font-weight: 600;
+        font-size: 18px;
+        color:#078898;
+        padding: 12px; 
+    }
+
+    .sub-menu ul li a:hover{
+        color: white;
+        border-left: none; 
+    }
+
+    nav li:hover .sub-menu{   
+        display: block;
+    }
+
+    /*Contact Page*/
+    .contact-title{
+        margin: 100px 0 50px 0; 
+    }
+    
+    .message-title{
+        font-size: 25px;
+        margin-left: 0px; 
+        text-align: center; 
+    }
+    
+    .contact-wrapper{
+        display: block; 
+    }
+    
+    .form-div{
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    form {
+        width: 100%;  
+        margin-top: 5px; 
+    }
+    
+    .contact-info2{
+        text-align: center; 
+    }
+  
+    .social-div { 
+        margin-left:0; 
+    }
+
+    /*footer*/
+    .arrowup{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .footer_contents{
+        padding: 30px; 
+    }
+
+    .products-box{
+        margin: 0px;
+        padding-right: 10px;
+    }
+
+    .prod-indus{
+        display: flex;
+    }
+
+    .indus-div{
+        display: block;
+        margin-left:0;
+    }
+
+    .industries2-box{
+        margin-top: 0px; 
+    }
+
+    .product, .industries {
+        font-size: 16px;
+    }
+
+    .industries1-box{
+        margin-right: 15px;
+    }
+
+    .footer-divider1, .footer-divider2{
+        margin: 50px 20px; 
+    }
+
+    .footer_contents2{
+        padding:0px; 
+        justify-content: space-around; 
+    }
+
+    .career-btn{
+        padding: 3px 20px;
+    }
+    /*social*/
+}
+
+@media only screen and (max-width:380px){
+
+    /*contact page*/
+    .contact-title{
+        margin: 50px 0 40px 0; 
+    }
+
+    input[type=submit] {
+        padding: 10px 25px;
+    }
+    
+    /*footer*/
+    footer{
+        padding-top: 10px; 
+    }
+
+    .footer-arrowup{
+        padding-right: 10px; 
+    }
+
+    .footer_contents{
+        display: block; 
+    }
+
+    .prod-indus{
+        display: flex; 
+        justify-content: space-between; 
+    }
+
+    .footer-divider1, .footer-divider2{
+        display: none; 
+    }
+
+    .edu2{
+        margin-top: 0; 
+    }
+
+    .contact-div{
+        margin-top: 20px; 
+        text-align: center;
+    }
+
+    .contact-location, .contact-inf, .contact-number {
+        text-align: center; 
+    }
+
+    .footer_contents2{
+        justify-content: space-between; 
+        padding: 0 20px 0 20px;
+    }    
+
+    .career-btn{
+        margin-top: 10px;
+    }
+
+    .footerlogo img{
+        margin-top: 0;
+    }
+
+    .social ul{
+        margin: 0;
+        padding: 0;
+    }
+
+}
